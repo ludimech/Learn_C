@@ -38,3 +38,14 @@ int main()
 That header file allows us to call functions from the standard input output library.
 
 ## Escape Sequences
+
+Escape sequences are a set of characters that allow us to manipulate text, they represent an action as follows:
+
+```
+\n - New Line
+\t - Tab
+\r - Carriage Return (moves the cursor to the beginning of the current line)
+\\ - Backslash
+\' - Single Quotation Mark
+\" - Double Quotation Mark
+```
