@@ -87,3 +87,58 @@ Conversion Specifiers tell the program how to process the data stored in memory,
 
 A constant allows us to give a variable a fixed value. By definition, variables are able to change value during execution but constant does **not** allow this.
 
+## Lesson 6: Mathematical Operators
+
+### Basic Functions
+
+```C
+// Given that a = 15 and b = 6
++ , Addition // a + b, would return 21
+- , Subtraction // a - b, would return 9
+* , Multiplication // a * b, would return 90
+/ , division // a / b, would return 2
+% , modulus // a % b, would return 3 (the remainder)
+```
+
+## Lesson 7: Reading Input from a user
+
+Reading input allows us to create programs that require interaction from a user. 
+
+**This is done using:**
+
+```C
+scanf("%d", &num1);
+```
+In line 110, or the above line of code illustrating scanf, we are reading a value from the user and storing it in num1. 
+
+The '&' sign is known as an **address operator** which contains a pointer to the memory location of the particular variable.
+
+## Lesson 8: Further Header Files (math.h)
+
+Using math.h we are able to use more complex mathematical calculations as shown in 8.more_mathops.
+
+## Program Flow Control
+
+Programs follow a chronological order of sorts where a task is executed one after the other. We are either able to create programs that run sequentially or programs that take different paths according to some conditions. Said conditions might be **relational**, or **logical expressions** and **loops**
+
+## Lesson 9: Conditionals
+
+When a condition is presented in a program, we get a logical 0 or logical 1, or return a Boolean value, i.e. **true or false**. If the condition is **true**, a set of statements will be executed. Alternatively, if the condition is **false**, a different set of statements is executed.
+
+```C
+- < - Smallet than
+- > - Greater than
+- <= - Smaller or equal to, (a<=3) : if a is 2 or 3, then result of comparison is TRUE
+- >= - Greater or equal to, (a>=3) : if a is 3 or 4, then result of comparison is TRUE
+- == - Equal to 
+- != - Not equal
+```
+
+These operators would be used when specifying conditions, for example the following:
+
+```C
+if (temp_now >= temp){
+    printf("Switching fain on\n");
+}
+```
+In the above code snippet, if the value stored in temp_now is greater or equal to the value stored in temp, then the statement “Switching fan on” will be displayed. This happens because the expression evaluated to ‘true’. If the expressions returned ‘false’, then nothing will be displayed as the printf() statement will be skipped.
