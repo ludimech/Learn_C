@@ -142,3 +142,40 @@ if (temp_now >= temp){
 }
 ```
 In the above code snippet, if the value stored in temp_now is greater or equal to the value stored in temp, then the statement “Switching fan on” will be displayed. This happens because the expression evaluated to ‘true’. If the expressions returned ‘false’, then nothing will be displayed as the printf() statement will be skipped.
+
+
+## Lesson 10: Switch Statements
+
+Switch Statements are a type of selection mechanism which can replace an array of **if statements**. The __Switch Statement__ selects one of many code blocks to be executed:
+
+```C
+switch(expression) {
+  case x:
+    // code block
+    break;
+  case y:
+    // code block
+    break;
+  default:
+    // code block
+}
+```
+
+Switch statements operate as follows:
+- The switch statement is evaluated once
+- The value of the expression is compared with the values of each case
+- If there is a match, the associated block of code is executed
+- The break statement breaks out the switch block and stops the execution
+- The default statement is optional, and specifies some code to run if there is no case match
+
+## Lesson 11: Logical Expressions
+
+Logical expressions are also used in condition statements. They can be used to evaluate two separate conditions, and according to the particular operator provide a Boolean output.
+
+- && - Logical **AND** (output is true when both are true)
+- || - Logical **OR** (output is true when either input is true)
+- ! - Logical **NOT** (Output is true when input is false)
+
+## Lesson 12: Loops
+
+A loop in programming refers to a piece of code which repeats until a particular condition is met. (pg 29/60)
