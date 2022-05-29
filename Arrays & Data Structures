@@ -1,0 +1,15 @@
+# Arrays & Data Structures
+
+## Arrays
+
+Arrays allow us to create collections of similar data under a single data type. An array can be imagined as a row with an index which starts from 0.
+
+$$array\; - |\;12\;|\;32\;|\;14\;|\;4\;|\;21\;|\;55\;|$$
+$$index\; - |\;\;0\;|\;\;1\;|\;\;2\;|\;\;3\;|\;\;4\;|\;\;5\;|$$
+
+This array has a size of 6. We can call the above array numbers, holding data type **int** and the size property being 6. The index determines the position of the number within the array, starting from 0.
+
+```C
+int numbers[6] = {12, 32, 14, 4, 21, 55};
+```
+

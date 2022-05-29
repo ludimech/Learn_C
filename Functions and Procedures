@@ -1,0 +1,30 @@
+# Functions and Procedures
+
+Functions are generally part of header files, or libraries such as <stdio.h> or <math.h>. Luckily, we are able to develop custom functions so that we can re-use them over and over throughout the program. 
+
+These functions are called **user-defined functions**, referred to as **function prototypes**. 
+
+Let us create a function which multiplies two integers. The function declaration includes:
+- Return type (if any) [In this case, int]
+- Function name followed by braces [In this case, multNum()]
+- Any parameters to be declared in braces [In this case, int, int]
+
+All of this put together gives us:
+
+```C
+int multNum(int, int)
+```
+
+If a function does not return anything, it would start with the word **void**, it could be also that the function does not take any parameters, e.g
+
+```C
+void printTotal()
+```
+
+Taking our previous function multNum, one needs to write what happens when the function is called: (this is called the __Function Definition__)
+
+```C
+int multNum(int num1, int num2) {
+    return num1 * num2;
+}
+```
