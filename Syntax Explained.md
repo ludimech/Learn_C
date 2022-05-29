@@ -98,6 +98,7 @@ A constant allows us to give a variable a fixed value. By definition, variables 
 * , Multiplication // a * b, would return 90
 / , division // a / b, would return 2
 % , modulus // a % b, would return 3 (the remainder)
+*= , Used as follows, x*=5, short hand for x = x*5
 ```
 
 ## Lesson 7: Reading Input from a user
@@ -176,6 +177,91 @@ Logical expressions are also used in condition statements. They can be used to e
 - || - Logical **OR** (output is true when either input is true)
 - ! - Logical **NOT** (Output is true when input is false)
 
-## Lesson 12: Loops
+## Loops
 
-A loop in programming refers to a piece of code which repeats until a particular condition is met. (pg 29/60)
+A loop in programming refers to a piece of code which repeats until a particular condition is met.
+
+## Lesson 12: For Loops
+
+**For* loops are used when the programmer knows __exactly__ how many times they want the to loop through the block of code, the general syntax follows this structure:
+
+```C
+for (statement 1; statement 2; statement 3){
+  // code block to be executed
+}
+```
+The statements are as follows:
+- **Statement 1** is executed (one time) before the execution of the code block.
+- **Statement 2** defines the condition for executing the code block.
+- **Statement 3** is executed (every time) after the code block has been executed.
+
+__Example:__
+
+```C
+int i;
+
+for (i = 0; i < 5; i++){
+  printf("%d\n", i);
+}
+```
+
+In the example:
+- **Statement 1** sets a variable before the loop starts (int i = 0)
+- **Statement 2** defines the condition for the loop to run (i must be less than 5). IF the condition is true, the loop will start over again, if it is false, the loop will end.
+- **Statement 3** increases the value (i++) each time the code block in the loop has been executed.
+
+> Note that **x++** is the same as writing **x = x + 1**
+
+## Lesson 13: Do While Loops
+
+Do/While Loops are a variant of the while loop. The loop will execute the code block once, before checking if the condition is true, then it will repeat the loop as long as the condition is true.
+
+```C
+do{
+  //code block to be executed
+}
+while (condition);
+```
+
+For example, in the code snippet below, the loop will be executed even if the condition is not met.
+
+```C
+int i = 0;
+
+do{
+  printf("%d\n", i);
+  i++;
+}
+while (i<5)
+```
+
+## Lesson 14: While Loops
+
+While loops loop through a block of code as long as the specified condition is **true**
+
+```C
+while(condition){
+  // code block to be executed
+}
+
+For example, in the code snippet below, the loop will run over and over as long as j is less than 7:
+
+```C
+int j = 0;
+  
+  while(i < 7){
+    printf("%d\n", j);
+    
+    j++;
+  }
+```
+
+## Lesson 15: Using 'break'
+
+The **break** keyword can be used to stop a determinate loop early, i.e. before the exit condition is met.
+
+## Lesson 16: Using 'continue'
+
+The **continue** keyword can be used to stop a determinate loop early, i.e. before the exit condition is met.
+
+> NULL or '\0' means that there us **no** value, we're looking for a "reserved" space in memory. 0 would not suffice as 0 itself is a value.
