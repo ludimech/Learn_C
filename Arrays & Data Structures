@@ -13,3 +13,12 @@ This array has a size of 6. We can call the above array numbers, holding data ty
 int numbers[6] = {12, 32, 14, 4, 21, 55};
 ```
 
+## Arrays of Characters
+
+An array of type char must include a null value at the end ('\0'). This means that id we need to declare an array large enough to hold the name 'luke' int it, the size of such array needs to be 4+1 characters.
+
+```C
+char name[] = "Luke" //or
+
+char name[5] = {'L', 'u', 'k', 'e', '\0'};
+```
